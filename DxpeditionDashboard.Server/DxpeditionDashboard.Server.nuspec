@@ -5,9 +5,9 @@
 	<version>1.0.0</version>
     <authors>Robert Chipperfield</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Deployment package for server submission app of CompressedLogs</description>
+    <description>Deployment package for Dxpedition Dashboard Server</description>
   </metadata>
   <files>
-    <file src="bin/Release/**" target="/" />
+    <file src="**" target="/" exclude="obj\**;App_Data\**;**\*.cs" />
   </files>
 </package>
