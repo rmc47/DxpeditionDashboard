@@ -42,7 +42,7 @@ namespace DxpeditionDashboard.Server.Controllers
             {
                 outputBuilder.AppendFormat("{0} @ {1}: {2}\r\n", mention.CreatedBy.Name, mention.CreatedAt, mention.FullText);
             }
-            return Content(outputBuilder.ToString());
+            return Content(outputBuilder.ToString(), "text/plain");
         }
 
 
