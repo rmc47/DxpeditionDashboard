@@ -36,7 +36,7 @@ namespace DxpeditionDashboard.Server.Controllers
             if (providedApiKey != ConfigurationManager.AppSettings["ApiKey"])
                 throw new UnauthorizedAccessException();
             InitTwitter();
-            var mentions = Timeline.GetMentionsTimeline();
+            var mentions = Timeline.GetMentionsTimeline(10);
             StringBuilder outputBuilder = new StringBuilder();
             foreach (var mention in mentions)
             {
